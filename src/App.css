@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 560px) {
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
+@media(max-widht: 768px){
+  .sticky-inner-wrapper,
+.sticky-outer-wrapper {
+ display: none !important;
+}
+}
+
+/* .slick-prev, .slick-next{
+    display: none !important;
+  } */
+
+.slick-prev:before {
+  content: url("./assets/icons/left-arrow.png") !important;
+}
+.slick-next:before {
+  content: url("./assets/icons/right-arrow.png") !important;
+}
+
+a:-webkit-any-link {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.notification__item--success {
+  background: #44a72c !important;
+  border: 1px solid lightgray;
+}
+
+/* .notifications-component {
+  margin-top: 65px !important;
+}*/
+
+.notification {
+  width: 250px !important;
+  margin-top: 65px !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.sticky-inner-wrapper,
+.sticky-outer-wrapper {
+  z-index: 20 !important;
+}
